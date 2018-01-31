@@ -1,13 +1,11 @@
+import 'materialize-css/dist/css/materialize.min.css';
 import React from 'react';
-import '../assets/css/app.css';
-import logo from '../assets/images/logo.svg';
+import Game from './game';
 
 const App = () => (
-    <div>
-        <div className="app">
-            <img src={logo} className="logo rotate"/>
-            <h1>Welcome to React</h1>
-        </div>
+    <div className="container">
+        <h1 className="center-align">Guessing Game</h1>
+        <Game/>
     </div>
 );
 
